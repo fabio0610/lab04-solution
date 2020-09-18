@@ -1,0 +1,3 @@
+class ScreenReceiptSender
+!!!133378.cpp!!!	sendReceipt() : std::string
+    return "Show receipt in screen";

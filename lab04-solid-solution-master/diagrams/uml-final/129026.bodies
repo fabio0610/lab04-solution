@@ -1,0 +1,20 @@
+class PhysicalGame
+!!!132354.cpp!!!	getItemWeight() : double
+    return itemWeight;
+!!!132482.cpp!!!	setItemWeight(in itemWeight : double) : void
+    PhysicalGame::itemWeight = itemWeight;
+!!!132610.cpp!!!	getProductDimensions() : std::string
+    return productDimensions;
+!!!132738.cpp!!!	setProductDimensions(in productDimensions : std::string) : void
+    PhysicalGame::productDimensions = productDimensions;
+!!!132866.cpp!!!	toString() : std::string
+    std::ostringstream output;
+    output << std::fixed << std::setprecision(2);
+    output << Game::toString()
+           << ", Item weight: " << getItemWeight()
+           << " Ounces, Product Dimension: " << getProductDimensions();
+    return output.str();
+!!!132994.cpp!!!	saveData() : std::string
+    return toString();
+!!!133122.cpp!!!	processMessage() : std::string
+    return "Ship the product";

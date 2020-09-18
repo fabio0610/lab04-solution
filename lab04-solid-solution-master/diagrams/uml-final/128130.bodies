@@ -1,0 +1,31 @@
+class Game
+!!!129282.cpp!!!	Game(in name : std::string, in price : double, in tax : double)
+    setName(name);
+    setPrice(price);
+    setTax(tax);
+!!!129410.cpp!!!	~Game()
+
+!!!129538.cpp!!!	getName() : std::string
+    return name;
+!!!129666.cpp!!!	setName(in name : std::string) : void
+    Game::name = name;
+!!!129794.cpp!!!	getPrice() : double
+    return price;
+!!!129922.cpp!!!	setPrice(in price : double) : void
+    Game::price = price;
+!!!130050.cpp!!!	getTax() : double
+    return tax;
+!!!130178.cpp!!!	setTax(in tax : double) : void
+    Game::tax = tax;
+!!!130306.cpp!!!	calculatePriceWithTax() : double
+    double finalPrice = applyDiscount();
+    return finalPrice + (finalPrice * getTax());
+!!!130434.cpp!!!	toString() : std::string
+    std::ostringstream output;
+    output << std::fixed << std::setprecision(2);
+    output << "Game Name: " << getName()
+           << ", Price: $" << getPrice()
+           << ", Price with Tax: $" << calculatePriceWithTax();
+    return output.str();
+!!!130562.cpp!!!	applyDiscount() : double
+    return getPrice();

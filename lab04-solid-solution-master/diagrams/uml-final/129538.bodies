@@ -1,0 +1,39 @@
+class Game
+!!!134786.cpp!!!	getName() : std::string
+    return name;
+!!!134914.cpp!!!	setName(in name : std::string) : void
+    Game::name = name;
+!!!135042.cpp!!!	getPrice() : double
+    return price;
+!!!135170.cpp!!!	setPrice(in price : double) : void
+    Game::price = price;
+!!!135298.cpp!!!	getTax() : double
+    return tax;
+!!!135426.cpp!!!	setTax(in tax : double) : void
+    Game::tax = tax;
+!!!135554.cpp!!!	getItemWeight() : double
+    return itemWeight;
+!!!135682.cpp!!!	setItemWeight(in itemWeight : double) : void
+    Game::itemWeight = itemWeight;
+!!!135810.cpp!!!	getProductDimensions() : std::string
+    return productDimensions;
+!!!135938.cpp!!!	setProductDimensions(in productDimensions : std::string) : void
+    Game::productDimensions = productDimensions;
+!!!136066.cpp!!!	calculatePriceWithTax() : double
+    return getPrice() + (getPrice() * getTax());
+!!!136194.cpp!!!	save(in filename : std::string) : void
+    std::ofstream ofs (filename, std::ofstream::out);
+
+    ofs << toString();
+
+    ofs.close();
+!!!136322.cpp!!!	toString() : std::string
+    std::ostringstream output;
+    output << std::fixed << std::setprecision(2);
+    output << "Game Name: " << getName()
+           << "\nItem Weight: " << getItemWeight()
+           << "\nProduct Dimensions: " << getProductDimensions()
+           << "\nPrice: $" << getPrice()
+           << "\nPrice with Tax: $" << calculatePriceWithTax();
+
+    return output.str();

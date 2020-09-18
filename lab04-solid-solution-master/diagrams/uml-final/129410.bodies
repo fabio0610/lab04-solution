@@ -1,0 +1,15 @@
+class StreamingGame
+!!!133762.cpp!!!	getUrlPath() : std::string
+    return urlPath;
+!!!133890.cpp!!!	setUrlPath(in urlPath : std::string) : void
+    StreamingGame::urlPath = urlPath;
+!!!134018.cpp!!!	toString() : std::string
+    std::ostringstream output;
+    output << std::fixed << std::setprecision(2);
+    output << Game::toString()
+           << ", utlPath: " << getUrlPath();
+    return output.str();
+!!!134146.cpp!!!	saveData() : std::string
+    return toString();
+!!!134274.cpp!!!	processMessage() : std::string
+    return "Replaceable Product";

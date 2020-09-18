@@ -1,0 +1,17 @@
+class DigitalGame
+!!!128258.cpp!!!	getFilePath() : std::string
+    return filePath;
+!!!128386.cpp!!!	setFilePath(in filePath : std::string) : void
+    DigitalGame::filePath = filePath;
+!!!128514.cpp!!!	toString() : std::string
+    std::ostringstream output;
+    output << std::fixed << std::setprecision(2);
+    output << Game::toString()
+           << ", filePath: " << getFilePath();
+    return output.str();
+!!!128642.cpp!!!	saveData() : std::string
+    return toString();
+!!!128770.cpp!!!	processMessage() : std::string
+    return "Replaceable Product";
+!!!128898.cpp!!!	applyDiscount() : double
+    return getPrice() - (getPrice() * 0.15);

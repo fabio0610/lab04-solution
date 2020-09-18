@@ -1,0 +1,3 @@
+class PrintReceiptSender
+!!!133250.cpp!!!	sendReceipt() : std::string
+    return "Print receipt";

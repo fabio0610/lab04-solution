@@ -1,0 +1,7 @@
+format 222
+
+classcanvas 128002 class_ref 129538 // Game
+  classdiagramsettings member_max_width 0 end
+  xyz 34 22 2000
+end
+end

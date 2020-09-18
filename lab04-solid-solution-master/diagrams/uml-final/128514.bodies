@@ -1,0 +1,3 @@
+class EmailReceiptSender
+!!!129026.cpp!!!	sendReceipt() : std::string
+    return "Send receipt by Email";

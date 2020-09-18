@@ -1,0 +1,16 @@
+class GameManager
+!!!130690.cpp!!!	save(inout saveGame : ISaveGame, in filename : std::string) : void
+    std::ofstream ofs (filename, std::ofstream::out);
+
+    ofs << saveGame->saveData();
+
+    ofs.close();
+!!!130818.cpp!!!	read(in filename : std::string) : std::string
+    std::ifstream ifs (filename);
+    std::stringstream buffer;
+    buffer << ifs.rdbuf();
+    std::string txtContent(buffer.str());
+
+    return txtContent;
+!!!130946.cpp!!!	purchase(inout receiptSender : IReceiptSender) : std::string
+    return receiptSender->sendReceipt();

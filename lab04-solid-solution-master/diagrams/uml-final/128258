@@ -1,0 +1,36 @@
+format 222
+"cmake-build-debug" // lab04-solid::cmake-build-debug
+  revision 1
+  modified_by 2 "mguzmana"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  objectcompositediagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  cpp_h_dir "/Users/mguzmana/Documents/@Inbox/GitHub/lab04-solid/cmake-build-debug/"
+  cpp_src_dir "/Users/mguzmana/Documents/@Inbox/GitHub/lab04-solid/cmake-build-debug/"
+  package_ref 128386 // CMakeFiles
+end
